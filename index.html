@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Vote Matters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
+    <!-- Slogan Section -->
+    <header>
+        <h1>🗳️ Every Vote Matters! 🗳️</h1>
+        <p>Make your vote count for a better future on this 5 Feb 2025</p>
+    </header>
+
+    <!-- EVM Voting Section -->
+    <section class="evm">
+        <h2>Vote for Your Leader</h2>
+        <div class="evm-container">
+            <div class="candidate" id="bjp">
+                <img src="BJP-logo.png" width="50px" alt="BJP Symbol">
+                <p>🟠 BJP - Narendra Modi</p>
+                <button onclick="castVote('BJP')">Vote</button>
+                <span class="vote-count">Votes: 0</span>
+            </div>
+            <div class="candidate" id="congress">
+                <img src="Indian_National_Congress_hand_logo.svg.png" alt="Congress Symbol" width="40px">
+                <p>🔵 Congress - Rahul Gandhi</p>
+                <button onclick="castVote('Congress')">Vote</button>
+                <span class="vote-count">Votes: 0</span>
+            </div>
+            <div class="candidate" id="aap">
+                <img src="Aam_Aadmi_Party_logo_(English).svg.png" alt="AAP Symbol" width="40px">
+                <p>🟢 AAP - Arvind Kejriwal</p>
+                <button onclick="castVote('AAP')">Vote</button>
+                <span class="vote-count">Votes: 0</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section class="info">
+        <h2>Why Should You Vote?</h2>
+        <p>Voting is a fundamental right and a powerful tool to shape the future of our nation. Every vote counts in a democracy.</p>
+    </section>
+
+    <!-- Language Selection -->
+    <div class="language">
+        <label for="lang-select">Choose Language:</label>
+        <select id="lang-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </div>
+
+    <!-- Social Media Sharing -->
+    <footer>
+        <p>Spread awareness! Share with friends:</p>
+        <a href="#" onclick="share()">📢 Share</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
